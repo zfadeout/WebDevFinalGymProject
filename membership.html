@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <header>
+        <div class="logo">
+          <img src="gymLogo.jpg" alt="Gym Logo">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">About Goku's Gym</a></li>
+            <li><a href="membership.html">Membership Signup</a></li>
+            <li><a href="premium.html" class="premium">Premium!!!</a></li>
+          </ul>
+        </nav>
+        <div class="cta">
+          <button>TRY IT FOR FREE</button>
+        </div>
+      </header>
+
+</head>
+<body>
+   
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Want to become an expert and get strong fast?</h1>
+        <a href="#" class="btn">Learn more!</a>
+      </div>
+    </section>
+  
+    
+  <!-- Membership section -->
+  <div class="membership-section">
+    <div class="membership-overlay">
+      <div class="membership-toggle-btn-container">
+        <button class="membership-toggle-btn">Become a member now?</button>
+      </div>
+      <div class="membership-form-container">
+        <img src="membershipImg1.png" alt="Placeholder Image" class="membership-image">
+        <form id="membership-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+          </div>
+          <div class="form-group">
+            <label for="expirationDate">Expiration Date:</label>
+            <input type="text" id="expirationDate" name="expirationDate" placeholder="MM/YY" required>
+          </div>
+          <div class="form-group">
+            <label for="cvc">CVC:</label>
+            <input type="text" id="cvc" name="cvc" maxlength="3" required>
+          </div>
+          <div class="form-group">
+            <label for="cardType">Card Type:</label>
+            <select id="cardType" name="cardType" required>
+              <option value="">Select Card Type</option>
+              <option value="visa">Visa</option>
+              <option value="mastercard">Mastercard</option>
+              <option value="discover">Discover</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Premium Plan:</label>
+            <div class="radio-group">
+              <div>
+                <input type="radio" id="basePlan" name="premiumPlan" value="base" checked>
+                <label for="basePlan">Base Plan ($40/month)</label>
+              </div>
+              <div>
+                <input type="radio" id="superPlan" name="premiumPlan" value="super">
+                <label for="superPlan">Super Edition ($55/month)</label>
+              </div>
+              <div>
+                <input type="radio" id="legendaryPlan" name="premiumPlan" value="legendary">
+                <label for="legendaryPlan">Legendary Edition ($70/month)</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="months">Months:</label>
+            <select id="months" name="months">
+              <option value="1">1 Month</option>
+              <option value="3">3 Months</option>
+              <option value="6">6 Months</option>
+              <option value="12">12 Months</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="totalAmount">Total Amount:</label>
+            <input type="text" id="totalAmount" name="totalAmount" readonly>
+          </div>
+          <button type="submit" class="proceed-btn">Proceed with Payment</button>
+        </form>
+        <img src="membershipImg2.png" alt="Placeholder Image" class="membership-image">
+      </div>
+    </div>
+  </div>
+
+  <!-- Total Amount Display Section -->
+  <div class="total-amount-section" id="totalAmountSection">
+    <img src="totalAmount.png" alt="Placeholder Image" class="total-amount-image">
+    <div class="total-amount-container">
+      <div class="total-amount-oval">
+        <span class="total-amount-text">Your total amount is:</span>
+        <span id="displayTotalAmount"></span>
+      </div>
+    </div>
+  </div>
+
+  <section class="image-slider-section">
+    <div class="slider-container">
+      <div class="slider-wrapper">
+        <div class="slider-slide">
+          <img src="sliderTest1.jpg" alt="Image 1">
+          <div class="slider-caption">Learn about our really cool training program that will get you pumped UP!!</div>
+        </div>
+        <div class="slider-slide">
+          <img src="sliderTest2.jpg" alt="Image 2">
+          <div class="slider-caption">Pay for the right price and you can even train with the best!!!</div>
+        </div>
+        <div class="slider-slide">
+          <img src="sliderTest3.jpg" alt="Image 3">
+          <div class="slider-caption">Cardio is important too so check out these cool plans!!!</div>
+        </div>
+        <div class="slider-slide">
+          <img src="image4.jpg" alt="Image 4">
+          <div class="slider-caption">Caption for Image 4</div>
+        </div>
+        <div class="slider-slide">
+          <img src="image5.jpg" alt="Image 5">
+          <div class="slider-caption">Caption for Image 5</div>
+        </div>
+        <div class="slider-slide">
+          <img src="image6.jpg" alt="Image 6">
+          <div class="slider-caption">Caption for Image 6</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="gym-logo.png" alt="Gym Logo">
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Membership</a></li>
+          <li><a href="#" class="premium-link">PREMIUM</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; Zachary Forkash</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
